@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữa đề thi thử</title>
+
+    <!-- liên kết file css -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- Toàn bộ nội dung website 
+        sẽ viết trong thẻ div có id là app -->
+    <div id="app">
+
+        <div class="logo">
+            <!-- chứa logo -->
+            <img src="./images/logo.png" alt="">
+        </div>
+
+        <div class="menu">
+            <!-- Chứa menu -->
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Máy giặt</a></li>
+                <li><a href="">Ti vi</a></li>
+                <li><a href="">Phụ kiện</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <!-- banner -->
+            <img src="./images/banner.png" alt="">
+        </div>
+
+        <div class="search">
+            <!-- Tìm kiếm -->
+
+            <form action="">
+                <!-- ô nhập thông tin -->
+                <!-- thêm thuộc tính required vào thẻ input tìm kiếm để validate -->
+                <input type="text" class="input__search" placeholder="Tìm kiếm thông tin" required>
+                <!-- nút tìm kiếm -->
+                <input type="submit" class="input__button" value="Tìm kiếm">
+            </form>
+        </div>
+
+        <div class="product">
+            <h2 class="product__heading">KHUYẾN MÃI HOT MỖI NGÀY</h2>
+            <div class="product__list">
+                <!-- từng sản phẩm -->
+
+                <!-- sản phẩm 1 -->
+                <div class="item">
+                    <h3 class="item__heading">Smart tivi LG 4K 43 inch</h3>
+                    <img src="./images/sp.png" alt="" class="item__img">
+                    <p class="item__price">11.900.000 đ</p>
+                    <p class="item__sale">9.190.000 đ</p>
+                </div>
+
+                <!-- sản phẩm 2 -->
+                <div class="item">
+                    <h3 class="item__heading">Smart tivi Sony 4K 43 inch</h3>
+                    <img src="./images/sp.png" alt="" class="item__img">
+                    <p class="item__price">12.900.000 đ</p>
+                    <p class="item__sale">10.190.000 đ</p>
+                </div>
+
+                <!-- sản phẩm 3 -->
+                <div class="item">
+                    <h3 class="item__heading">Smart tivi LG 4K 43 inch</h3>
+                    <img src="./images/sp.png" alt="" class="item__img">
+                    <p class="item__price">11.900.000 đ</p>
+                    <p class="item__sale">9.190.000 đ</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="news">
+            <!-- tin tức -->
+            <h2 class="product__heading">TIN TỨC NỔI BẬT</h2>
+            
+            <!-- nội dung -->
+            <div class="content">
+                <!-- bên trái -->
+                <div class="content__left">
+                    <img src="./images/sp.png" alt="">
+                </div>
+                <!-- bên phải -->
+                <div class="content__right">
+                    <h3 class="content_heading">
+                        Chương trình siêu khuyến mãi hè 2024 cho 10 kahcsh hàng đầu tiên
+                    </h3>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Porro minima sequi qui delectus odit nihil magnam fugit temporibus ad. 
+                        Obcaecati ipsum nisi consequuntur adipisci quo molestias molestiae iste commodi, 
+                        esse quis! Tempora eos fugiat soluta, vel commodi quisquam reiciendis 
+                        necessitatibus ipsum nam harum mollitia, 
+                        voluptates aliquam velit adipisci hic doloribus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 class="footer__heading">Tên sinh viên</h3>
+        </div>
+
+    </div>
+</body>
+</html>

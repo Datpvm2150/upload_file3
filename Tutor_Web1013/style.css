@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#app{
+    /* độ rộng nội dung bằng 90% chiều ngang màn hình */
+    width: 90%;
+
+    /* căn giữa nội dung */
+    margin: 0 auto;
+
+    /* height: 100vh;
+    background-color: red; */
+
+    height: 3000px;
+}
+
+/* logo */
+.logo{
+    /* màu nền */
+    background-color: #009ee1;
+}
+
+.logo img{
+    /* chiều cao */
+    height: 100px;
+    /* căn giữa logo */
+    margin: 0 auto;
+    /* chuyển thẻ img về dạng block */
+    display: block;
+}
+
+/* menu */
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #0000a6;
+}
+
+/* Đưa menu từ hàng dọc lên hàng ngang */
+
+/* cách 1 */
+
+/* .menu ul li{
+    float: left;
+} */
+
+/* cách 2 */
+
+.menu ul {
+    display: flex;
+
+    /* cách 2 căn chữ theo chiều dọc */
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul li {
+    /* xóa dấu chấm */
+    list-style: none;
+    /* cách các menu */
+    padding: 0 20px;
+}
+
+.menu ul li a {
+    /* xóa các dấu gạch chân */
+    text-decoration: none;
+
+    color: #fff;
+    font-size: 22px;
+    /* cách 1 căn chữ theo chiều dọc */
+    /* độ cao của chữ */
+    /* line-height: 60px; */
+}
+
+/* khi hover vào thẻ li thì thẻ a gạch chân */
+.menu ul li:hover a {
+    /* gạch chân */
+    text-decoration: underline;
+}
+
+/* banner */
+.banner{
+    /* cách phần tử phía trên */
+    margin-top: 10px;
+}
+
+.banner img{
+    /* đưa chiều ngang của ảnh chiếm toàn bộ khung */
+    width: 100%;
+}
+
+/* Tìm kiếm */
+.search{
+    width: 100%;
+    height: 80px;
+    background-color: #0000a6;
+
+    /* căn giữa theo chiều dọc cho form tìm kiếm */
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+
+}
+
+.search form{
+    width: 100%;
+}
+
+.input__search{
+    width: 75%;
+    height: 50px;
+    /* Kích thước của chữ 'Tìm kiếm thông tin' */
+    font-size: 18px;
+    /* căn chỉnh vào trong bên trái */
+    padding-left: 50px;
+}
+
+.input__button{
+    width: 150px;
+    height: 50px;
+    /* màu nền */
+    background-color: orangered;
+    /* màu chữ */
+    color: #fff;
+    /* Kích thước chữ 'Tìm kiếm' */
+    font-size: 22px;
+    /* Viền cho nút bấm */
+    border: 1px solid #fff;
+
+    /* căn chỉ ra bên ngoài */
+    margin-left: 150px;
+}
+
+
+/* sản phẩm */
+.product__heading{
+    font-size: 26px;
+    color: #6e8333;
+    /* căn giữa cho chữ */
+    text-align: center;
+    /* căn trên dưới 20px , trái phải 0 */
+    padding: 20px 0;
+}
+
+.item{
+    border: 1px solid #333;
+    width: 30%;
+
+    padding: 30px 15px;
+
+    display: flex;
+    /* căn chỉnh các phần tử theo chiều dọc */
+    flex-direction: column;
+    /* căn giữa */
+    align-items: center;
+
+    /* float: left; */
+}
+
+.item__heading{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.item__img{
+    width: 90%;
+}
+
+.item__price{
+    font-size: 20px;
+    /* gạch ngang chữ */
+    text-decoration: line-through;
+}
+
+.item__sale{
+    font-size: 28px;
+    color: red;
+    /* độ đậm của chữ */
+    font-weight: bold;
+}
+
+.product__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* tin tức */
+
+.content{
+    border: 1px solid #333;
+    padding: 20px 10px;
+    /* đẩy nội dung trái và phải lên 1 hàng */
+    display: flex;
+}
+
+.content__left, .content__right{
+    width: 50%;
+}
+
+.content__left img{
+    width: 80%;
+}
+
+.content_heading{
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.content__description{
+    font-size: 24px;
+    color: #333;
+    line-height: 32px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #0000a6;
+}
+
+.footer__heading{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.item:hover {
+    /* tạo bóng cho sản phẩm */
+    box-shadow: 10px 10px 5px 5px red;
+
+    /* chuyển từ nét liền về nét đứt */
+
+    border: 10px dotted #333;
+}
